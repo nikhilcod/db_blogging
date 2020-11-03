@@ -1,6 +1,5 @@
 //Import npm package "sequelize and md5"
 const { DataTypes } = require("sequelize");
-const md5 = require("md5");
 
 //Export Bookmark Model
 module.exports = function (sequelize) {

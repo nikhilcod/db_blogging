@@ -18,6 +18,7 @@ const sequelize = new Sequelize({
 //Define tables in database
 const blogs = require("./models/blog")(sequelize);
 const users = require("./models/user")(sequelize);
+const bookmarks = require("./models/bookmark")(sequelize);
 
 //Authentication and Synchronization
 const init = async function () {
@@ -35,5 +36,6 @@ module.exports = {
   sequelize,
   blogs,
   users,
+  bookmarks,
   init,
 };
